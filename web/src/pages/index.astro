@@ -1,0 +1,15 @@
+---
+import App from "../components/App.jsx";
+import Layout from "../layouts/Layout.astro";
+import { getBlogPost } from "../sanity/api.js";
+
+const data = await getBlogPost();
+console.log("test", data);
+---
+
+<h1>
+  {data[0].title}
+</h1>
+<Layout>
+  <App client:only="react" />
+</Layout>
