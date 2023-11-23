@@ -1,15 +1,28 @@
 ---
 import App from "../components/App.jsx";
 import Layout from "../layouts/Layout.astro";
-import { getBlogPost } from "../sanity/api.js";
+import {
+  getBlogPost,
+  getNewsPost,
+  getCategories,
+  getGeneralInfo,
+} from "../sanity/api.js";
 
-const data = await getBlogPost();
-console.log("test", data);
+const blogData = await getBlogPost();
+const newsData = await getNewsPost();
+const generalInfoData = await getGeneralInfo();
+const categoryData = await getCategories();
 ---
 
 <h1>
-  CMS data ingestion test: {data[0].title}
+  CMS blog data ingestion test: {blogData[0].title}
 </h1>
 <Layout>
-  <App client:only="react" />
+  <App
+    client:only="react"
+    blogData={blogData}
+    newsData={newsData}
+    generalInfoData={generalInfoData}
+    categoryData={categoryData}
+  />
 </Layout>

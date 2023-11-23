@@ -11,7 +11,12 @@ import NewsParent from './NewsTemplate/NewsParent.jsx';
 import Bio from './BioSection/Bio.jsx';
 import Index from './IndexSection/Index.jsx';
 
-function App() {
+
+function App({blogData, newsData, generalInfoData, categoryData}) {
+
+  // all data can be accessed here:
+  console.log(blogData, newsData, generalInfoData, categoryData)
+
 
   const [offset, setOffset] = useState(0);
   const [selectedColor, setColor] = useState("#79ff4d");
