@@ -12,10 +12,11 @@ const blogData = await getBlogPost();
 const newsData = await getNewsPost();
 const generalInfoData = await getGeneralInfo();
 const categoryData = await getCategories();
+console.log(blogData[0], "--blogData");
+console.log(newsData[0], "--blogData");
 ---
-
 <h1>
-  CMS blog data ingestion test: {blogData[0].title}
+  Testing
 </h1>
 <Layout>
   <App
