@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
- const Bio = (props) => {
+const Bio = (props) => {
 
     const {
       biography,

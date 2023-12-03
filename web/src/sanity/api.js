@@ -1,6 +1,5 @@
 import { useSanityClient, groq } from 'astro-sanity';
 
-
 export async function getBlogPost() {
   const query = groq`*[_type == "post"]{
     _id,

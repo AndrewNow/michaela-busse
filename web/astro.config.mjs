@@ -5,7 +5,7 @@ import sanity from "astro-sanity";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), sanity({
-    projectId: 'x10601ph',
+    projectId: 'nzp2n8vz',
     dataset: 'production',
     apiVersion: '2023-11-07',
     useCdn: true,

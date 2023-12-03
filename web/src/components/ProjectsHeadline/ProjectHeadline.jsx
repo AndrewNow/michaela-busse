@@ -14,7 +14,7 @@ import React, { useEffect } from "react";
       keywords,
       location,
       title,
-      type      
+      type
     } = data;
 
     let entryContainerId = `entry_container_${index}`

@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'michaela-busse-temp',
+  title: 'michaela-busse',
 
-  projectId: 'x10601ph',
+  projectId: 'nzp2n8vz',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
